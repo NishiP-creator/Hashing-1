@@ -7,6 +7,7 @@ Edge cases:
 Time Complexity: O(nklogk)
 Space Complexity: O(nk)
 The number of words n. The length of the words is k. So it’s O(nk).
+You store entire strings (of length k) as: Dict keys (tuples or joined strings), Dict values (lists of words). Each word takes O(k) space --> n such words → O(nk)
 """
 
 class Solution:

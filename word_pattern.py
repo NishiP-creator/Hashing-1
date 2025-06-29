@@ -5,8 +5,8 @@ Edge cases:
 1. Only one string in s and 1 character in pattern.
 2. Pattern and s have different lengths
 
-Time Complexity: O(n) where n is the length of the pattern.
-Space Complexity: O(nk) where k is the averge length of the words
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 class Solution:
@@ -17,7 +17,7 @@ class Solution:
     if len(s.split()) == len(pattern) == 1:
       return True
     
-    s_list = s.split()
+    s_list = s.split() # O(len(s)) → O(n * k) in worst case
     patternMap= {}
     sMap = {}
     
